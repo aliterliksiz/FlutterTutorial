@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/101/app_bar_learn.dart';
 import 'package:flutter_application_1/101/button_learn.dart';
+import 'package:flutter_application_1/101/color_learn.dart';
 import 'package:flutter_application_1/101/container_sized_box_learn.dart';
+import 'package:flutter_application_1/101/icon_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
 
@@ -20,15 +22,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          errorColor: ColorsItems.sulu,
           appBarTheme: const AppBarTheme(
               centerTitle: true,
               systemOverlayStyle: SystemUiOverlayStyle.light,
               elevation: 0,
-              backgroundColor: Colors.red)),
+              backgroundColor: Colors.transparent)),
       //Tema ile uğraşarak belirli bir standarta sahip olmalıyız.
       //Her sayfada appbar olmaz
       //Sayfaların standartlarını main.dart'ta yazacağız sonra bir daha yazmayacağız
-      home: AppBarLearnView(),
+      home: ColorLearn(),
     );
   }
 }

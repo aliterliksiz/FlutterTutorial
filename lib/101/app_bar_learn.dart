@@ -15,7 +15,7 @@ class AppBarLearnView extends StatelessWidget {
         systemOverlayStyle: SystemUiOverlayStyle.light,
         leading: Icon(Icons.chevron_left),
         leadingWidth: 23,
-        actionsIconTheme: IconThemeData(color: Colors.red, size: 40),
+        //actionsIconTheme: IconThemeData(color: Colors.red, size: 40),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
           Center(
