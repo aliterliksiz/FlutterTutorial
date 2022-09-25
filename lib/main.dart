@@ -11,6 +11,7 @@ import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
 
+import '101/custom_widget_learn.dart';
 import '101/image_learn.dart';
 import 'demos/note_demos_view.dart';
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       //Tema ile uğraşarak belirli bir standarta sahip olmalıyız.
       //Her sayfada appbar olmaz
       //Sayfaların standartlarını main.dart'ta yazacağız sonra bir daha yazmayacağız
-      home: NoteDemos(),
+      home: CustomWidgetLearn(),
     );
   }
 }
