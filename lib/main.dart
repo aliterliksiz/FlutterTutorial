@@ -4,8 +4,11 @@ import 'package:flutter_application_1/101/app_bar_learn.dart';
 import 'package:flutter_application_1/101/button_learn.dart';
 import 'package:flutter_application_1/101/card_learn.dart';
 import 'package:flutter_application_1/101/color_learn.dart';
+import 'package:flutter_application_1/101/column_row_learn.dart';
 import 'package:flutter_application_1/101/container_sized_box_learn.dart';
 import 'package:flutter_application_1/101/icon_learn.dart';
+import 'package:flutter_application_1/101/indicator_learn.dart';
+import 'package:flutter_application_1/101/list_tile_learn.dart';
 import 'package:flutter_application_1/101/padding_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
@@ -29,6 +32,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme:
+              ProgressIndicatorThemeData(color: Colors.white),
+          listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
           errorColor: ColorsItems.sulu,
           appBarTheme: const AppBarTheme(
               centerTitle: true,
@@ -38,7 +44,7 @@ class MyApp extends StatelessWidget {
       //Tema ile uğraşarak belirli bir standarta sahip olmalıyız.
       //Her sayfada appbar olmaz
       //Sayfaların standartlarını main.dart'ta yazacağız sonra bir daha yazmayacağız
-      home: CustomWidgetLearn(),
+      home: ColumnRowLearn(),
     );
   }
 }
