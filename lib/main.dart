@@ -12,6 +12,7 @@ import 'package:flutter_application_1/101/list_tile_learn.dart';
 import 'package:flutter_application_1/101/padding_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stack_learn.dart';
+import 'package:flutter_application_1/101/statefull_learn.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
 import 'package:flutter_application_1/demos/stack_demo_view.dart';
@@ -34,8 +35,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-          progressIndicatorTheme:
-              ProgressIndicatorThemeData(color: Colors.white),
+          progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.white),
           listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
           errorColor: ColorsItems.sulu,
           appBarTheme: const AppBarTheme(
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       //Tema ile uğraşarak belirli bir standarta sahip olmalıyız.
       //Her sayfada appbar olmaz
       //Sayfaların standartlarını main.dart'ta yazacağız sonra bir daha yazmayacağız
-      home: StackDemoView(),
+      home: StatefullLearn(),
     );
   }
 }
