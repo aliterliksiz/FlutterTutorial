@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/product/counter_hello_button.dart';
+import 'package:flutter_application_1/product/language/language_items.dart';
 
 //Statefull'un amacı bir datayı update etmem gerekiyorsa, call etmem gerekiyorsa, çağırmam gerekiyorsa kullanılır
 class StatefullLearn extends StatefulWidget {
@@ -27,7 +28,9 @@ class _StatefullLearnState extends State<StatefullLearn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(LanguageItems.welcomeTitle),
+      ),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

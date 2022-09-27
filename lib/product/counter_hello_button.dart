@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/product/language/language_items.dart';
 
 class CounterHelloButton extends StatefulWidget {
   const CounterHelloButton({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class CounterHelloButton extends StatefulWidget {
 
 class _CounterHelloButtonState extends State<CounterHelloButton> {
   int _counterCustom = 0;
-  final String _welcomeTitle = 'Merhaba';
+  final String _welcomeTitle = LanguageItems.welcomeTitle;
   void _updateCounter() {
     setState(() {
       ++_counterCustom;
@@ -18,6 +19,6 @@ class _CounterHelloButtonState extends State<CounterHelloButton> {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: _updateCounter, child: Text('$_welcomeTitle $_counterCustom'));
+    return ElevatedButton(onPressed: _updateCounter, child: Text('$_welcomeTitle  $_counterCustom'));
   }
 }
