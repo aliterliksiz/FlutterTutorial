@@ -12,7 +12,7 @@ class PageViewLearn extends StatefulWidget {
 
 class _PageViewLearnState extends State<PageViewLearn> {
   final _pageController = PageController(viewportFraction: 0.7);
-  int _currentPageIndex = 1;
+  int _currentPageIndex = 0;
   void _updatePageIndex(int index) {
     setState(() {
       _currentPageIndex = index;
