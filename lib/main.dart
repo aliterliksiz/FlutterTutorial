@@ -14,7 +14,9 @@ import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stack_learn.dart';
 import 'package:flutter_application_1/101/statefull_learn.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
+import 'package:flutter_application_1/101/text_field_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
+import 'package:flutter_application_1/demos/color_demos_view.dart';
 import 'package:flutter_application_1/demos/stack_demo_view.dart';
 
 import '101/custom_widget_learn.dart';
@@ -48,9 +50,7 @@ class MyApp extends StatelessWidget {
       //Tema ile uğraşarak belirli bir standarta sahip olmalıyız.
       //Her sayfada appbar olmaz
       //Sayfaların standartlarını main.dart'ta yazacağız sonra bir daha yazmayacağız
-      home: StatefullLifeCycleLearn(
-        message: 'AliVel',
-      ),
+      home: ColorDemos(),
     );
   }
 }
